@@ -1,0 +1,29 @@
+query GithubUser($user: String!, $org: String!) {
+  result: user(login: $user) {
+    url: avatarUrl
+    name
+    username: login
+    location
+    bio
+    company
+    createdAt
+    starredRepositories {
+      stars: totalCount
+    }
+    organizations {
+      orgs: totalCount
+    }
+    followers {
+      followers: totalCount
+    }
+    issues {
+      issues: totalCount
+    }
+    pullRequests {
+      PRs: totalCount
+    }
+    organization(login: $org) {
+      member: name
+    }
+  }
+}
