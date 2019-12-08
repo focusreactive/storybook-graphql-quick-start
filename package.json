@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "start-storybook -p 6006 -s ./static",
-    "dev": "start-storybook -p 6006 --ci",
+    "dev": "start-storybook -p 6006 -s ./static --ci",
+    "test": "yarn dev --smoke-test",
     "update": "graphql get-schema",
     "build-storybook": "build-storybook -s ./static",
     "deploy:storybook": "storybook-to-ghpages"
