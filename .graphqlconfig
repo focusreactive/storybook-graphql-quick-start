@@ -5,9 +5,9 @@
       "extensions": {
         "endpoints": {
           "default": {
-            "url": "https://api.github.com/graphql",
+            "url": "${env:API_ENDPOINT}",
             "headers": {
-              "Authorization": "Bearer ad47d85c28f035f4a81b7a255d25c970581d5d9f"
+              "Authorization": "Bearer ${env:API_TOKEN}"
             }
           }
         }
