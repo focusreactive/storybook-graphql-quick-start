@@ -1,14 +1,15 @@
 import { configure, addDecorator, addParameters } from '@storybook/react';
 import { create } from '@storybook/theming';
-import { withGraphCMS } from "@focus-reactive/storybook-addon-graphcms";
-import brandImage from '../static/graphql.svg';
+import { withGraphCMS } from '@focus-reactive/storybook-addon-graphcms';
 import '@storybook/addon-console';
 
+import brandImage from '../static/graphql.svg';
+import getToken from './helper/generate-token';
 
 addDecorator(
   withGraphCMS({
     endpoint: process.env.API_ENDPOINT,
-    token: process.env.API_TOKEN,
+    token: process.env.API_TOKEN || getToken(),
   })
 );
 

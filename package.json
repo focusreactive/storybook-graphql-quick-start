@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "start-storybook -p 6006",
+    "start": "start-storybook -p 6006 -s ./static",
     "dev": "start-storybook -p 6006 --ci",
     "update": "graphql get-schema",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -s ./static",
+    "deploy:storybook": "storybook-to-ghpages"
   },
   "keywords": [],
   "author": "",
