@@ -10,11 +10,5 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - name: Cache node modules
-        uses: actions/cache@v1
-        with:
-          path: node_modules
-          key: dependencies
       - run: yarn
       - run: yarn test
-      - run: yarn prepare
