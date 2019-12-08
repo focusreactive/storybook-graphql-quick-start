@@ -19,7 +19,7 @@ module.exports = async ({ config, mode }) => {
         loader: 'webpack-graphql-loader',
         options: {
           // validate: true,
-          // schema: "./path/to/schema.json",
+          // schema: path.resolve(__dirname, '../schema.json'),
           // removeUnusedFragments: true
           // etc. See "Loader Options" below
         },

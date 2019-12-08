@@ -6,6 +6,7 @@
   "scripts": {
     "start": "start-storybook -p 6006",
     "dev": "start-storybook -p 6006 --ci",
+    "update": "graphql get-schema",
     "build-storybook": "build-storybook"
   },
   "keywords": [],
@@ -24,6 +25,7 @@
     "@storybook/storybook-deployer": "^2.8.1",
     "babel-loader": "^8.0.6",
     "graphql": "^14.5.8",
+    "graphql-cli": "^3.0.14",
     "prettier": "^1.19.1",
     "webpack-graphql-loader": "^1.0.2"
   }

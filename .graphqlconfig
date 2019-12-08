@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "storybook-graphql-kit": {
+      "schemaPath": "schema.json",
+      "extensions": {
+        "endpoints": {
+          "default": {
+            "url": "https://api.github.com/graphql",
+            "headers": {
+              "Authorization": "Bearer ad47d85c28f035f4a81b7a255d25c970581d5d9f"
+            }
+          }
+        }
+      }
+    }
+  }
+}
