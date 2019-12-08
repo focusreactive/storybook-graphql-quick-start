@@ -13,5 +13,3 @@ jobs:
       - name: yarn test
       - run: yarn
       - run: yarn test
-        env:
-          CI: true
