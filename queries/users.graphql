@@ -6,7 +6,6 @@ query GithubUser($user: String!, $org: String!) {
     location
     bio
     company
-    createdAt
     starredRepositories {
       stars: totalCount
     }
@@ -22,7 +21,7 @@ query GithubUser($user: String!, $org: String!) {
     pullRequests {
       PRs: totalCount
     }
-    organization(login: $org) {
+    storybook: organization(login: $org) {
       member: name
     }
   }
