@@ -24,7 +24,7 @@ yarn start
 
 you can use npm as well
 
-As soon as Storybook is builded open http://localhost:6006/ your browser
+As soon as Storybook is builded open http://localhost:6006/ in your browser
 
 Now you are ready to switch to your GraphQL endpoint and start writing your own queries
 
