@@ -13,6 +13,8 @@ Out of the box you will have a Storybook based project ready to start writing Gr
 
 ![demo app](docs/storybook.png)
 
+This project is complementary to the [Storybook Addon Graphcms](https://github.com/focusreactive/storybook-addon-graphcms)
+
 ### Quick Start
 
 ```shell
@@ -45,7 +47,7 @@ Note how we can pass variables to your queries:
 
 `vars: { org: 'storybookjs' }` - this is the list of variables that will be passed directly
 
-`searchVars: { user: 'UsulPro' }` - that variables will appear in the addon panel and users can write own values. For example in the demo project you can input a Github user nickname to inspect a user.
+`searchVars: { user: 'UsulPro' }` - those variables will appear in the addon panel and users can write own values. For example in the demo project you can input a Github user nickname to inspect a user.
 
 
 ### Configuring endpoint
@@ -59,6 +61,8 @@ See more settings in `.storybook/config.js`
 See API references on Storybook-Addon-GraphCMS project readme
 
 https://github.com/focusreactive/storybook-addon-graphcms#api
+
+If you're looking for a way to add this addon to your existing project manually you'll find documentation there as well.
 
 ### Scripts
 
@@ -94,7 +98,7 @@ Here is a list of tools used in this project with links to documentation
 
 ### Github GraphQL API
 
-This project includes initial settings for Github Graphql API. There is a demo token with read only access. Don't use it for development your project. If you are looking for creating Github service create you own token. See documentation here.
+This project includes initial settings for Github Graphql API. There is a demo token with read only access. Don't use it for development your project. If you are looking for creating Github service create your own token. See documentation here.
 
 https://developer.github.com/v4/guides/intro-to-graphql/#discovering-the-graphql-api
 
